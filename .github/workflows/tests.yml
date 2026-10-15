@@ -1,0 +1,19 @@
+name: Tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r results/contest/requirements-tested.txt
+      - run: python -m pip install -e .
+      - run: python -m pytest -q
+      - run: python -m examples.cpca_real_data --check
+      - run: python -m checks.verify_error_bounds --output /tmp/hsvd-error-bounds.json
+      - run: python -m checks.verify_paper_identities
+      - run: python -m checks.verify_full_construction
+      - run: python -m checks.render_contest_tables --export results/contest/tables.tex --check

@@ -1,0 +1,87 @@
+{
+  "alpha": 2.0,
+  "features": 77,
+  "target_records": 270,
+  "background_records": 135,
+  "original_factor_shape": [
+    77,
+    405
+  ],
+  "compressed_factor_shape": [
+    77,
+    154
+  ],
+  "structure": {
+    "rank": 76,
+    "l_plus": 34,
+    "l_minus": 42,
+    "j": 0,
+    "p0": 43,
+    "q0": 35
+  },
+  "missing_target": 324,
+  "missing_background": 199,
+  "selected_signed_eigenvalues": [
+    10.293033205768504,
+    7.1975398008061555
+  ],
+  "reference_largest_eigenvalues": [
+    10.293033205768502,
+    7.197539800806132
+  ],
+  "pca_explained_variance_ratios": [
+    0.39197390709028,
+    0.12434498297995394
+  ],
+  "cpca_contrast_trace": 17.490573006574607,
+  "pca_contrast_trace": -12.6489244797495,
+  "projector_error": 8.711151291234638e-15,
+  "projector_is_unique": true,
+  "second_to_third_eigenvalue_gap": 3.685078794508466,
+  "optimal_trace_error_absolute": 2.842170943040401e-14,
+  "eigen_residual_relative": 1.927695424566544e-15,
+  "covariance_compression_error_relative": 3.571486534164396e-15,
+  "spectrum_error_absolute": 5.3290705182007514e-14,
+  "hsvd_diagnostics": {
+    "reconstruction_error": 2.6643767845578173e-15,
+    "unitarity_error": 2.213713330606874e-15,
+    "j_unitarity_error": 1.684657250577257e-14,
+    "transform_error": 1.3868549996402607e-14,
+    "norm_v": 17.145748024761,
+    "rank_truncation_error": 5.093326582036149e-17
+  },
+  "target_mice": 18,
+  "target_records_per_mouse": [
+    15
+  ],
+  "background_mice": 9,
+  "background_records_per_mouse": [
+    15
+  ],
+  "target_genotype_records": {
+    "Control": 135,
+    "Ts65Dn": 135
+  },
+  "protocol": "cpca-real-v1",
+  "dataset_url": "https://archive.ics.uci.edu/static/public/342/data.csv",
+  "dataset_sha256": "86dc3961c391df56c98d86757f779ae04e19229f12d9835ca084d01de22a10e5",
+  "python": "3.12.2",
+  "numpy": "2.0.1",
+  "source_hashes": {
+    "examples/cpca_real_data.py": "afbf8b8cc07f24d9cd9a9a9a2a047c38b1eeb5879f3bc076c1b6ee231836e434",
+    "tests/test_cpca_real_data.py": "fb8862b0c3f50cd1de09da5f13872b97e55a678f06e1e466bc7840d9aec32acc",
+    "hsvd/core.py": "1c3c3160bf595518507fe7f70439f11c786f47748694b8b4584d25d3d0cf8027",
+    "hsvd/_numeric.py": "67da885bb159d852a137f8db6c2de4d4fbb2e0f0ea92d96413a713d5e69f9cc6",
+    "hsvd/_types.py": "16ac7373e422f38c31aaacf3dc9427d37e762819d56bc4721e8fd15edba32183",
+    "hsvd/__init__.py": "6b13378d0d16e175c9086ddb2baf250440579b761896dae1be04d63a7683faf7"
+  },
+  "artifact_hashes": {
+    "data.csv": "86dc3961c391df56c98d86757f779ae04e19229f12d9835ca084d01de22a10e5",
+    "inputs.npz": "9d9274dcccab6c84fe596cc92e356a95e703e7190acb8dd8792e5c11b27ee15c",
+    "computed.npz": "deeded1228d78427da6fd95bcabd021e0c154ba5c9594bf8051815dce63cc900",
+    "projection.csv": "4d7c8a2029cba15be910396dd7396c9757e0cefa967cdcc5434ae041d7aae106",
+    "pca_vs_cpca.png": "1f3e27bc25386d0f8b720a8799587d0145c216023a4728a68587dbb0fcbc4b92",
+    "pca_vs_cpca.pdf": "f410154be5ff89def8888a847925917e84d686af8aa44107ad4c4e0205b5f5c6",
+    "PROVENANCE.md": "d53936de40b80c6c36bd58234de5c72a7af19407166e0321ba6b70cc8f2190dd"
+  }
+}

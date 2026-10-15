@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coursework-hsvd"
+version = "0.3.0"
+description = "Constructive hyperbolic singular value decomposition, including isotropic blocks"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+test = ["pytest>=7.4", "sympy>=1.12", "threadpoolctl>=3.1"]
+experiments = ["threadpoolctl>=3.1", "matplotlib>=3.7", "mpmath>=1.3"]
+
+[tool.setuptools.packages.find]
+include = ["hsvd*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+filterwarnings = ["error"]

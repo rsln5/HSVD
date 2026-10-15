@@ -1,0 +1,13 @@
+# Source hashes in the experimental protocol are calculated with LF endings.
+*.py text eol=lf
+*.toml text eol=lf
+*.tex text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.pdf binary
+*.npz binary
+*.png binary
+# Preserve the exact bytes of hash-verified source data and projections.
+*.csv -text
