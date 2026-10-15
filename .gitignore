@@ -15,6 +15,5 @@ tmp/
 *.xdv
 *.fls
 *.fdb_latexmk
-/paper/nirs_computer_science.pdf
 /github/
 /output/

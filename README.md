@@ -22,7 +22,7 @@
 | `examples/cpca_real_data.py` | PCA и cPCA на данных об измерениях белков |
 | `results/contest/` | Сохранённые входы, полный протокол и таблицы |
 | `results/applications/cpca_real/` | Данные cPCA, происхождение, расчёты и рисунки |
-| `paper/` | Актуальная работа в LaTeX и готовый рисунок |
+| `paper/` | Актуальная работа в LaTeX, скомпилированный PDF и готовый рисунок |
 | `.github/workflows/tests.yml` | Автоматическая проверка на GitHub |
 
 Рабочие исходники находятся в этих каталогах. Папка `github/` содержит
@@ -168,8 +168,9 @@ pdflatex -interaction=nonstopmode -halt-on-error nirs_computer_science.tex
 cd ..
 ```
 
-Также поддерживаются XeLaTeX, LuaLaTeX и Tectonic. Ранее экспортированные
-PDF работы в комплект не включены, чтобы не смешивать редакции.
+Также поддерживаются XeLaTeX, LuaLaTeX и Tectonic. Актуальный PDF включён
+в комплект рядом с исходником: `paper/nirs_computer_science.pdf`.
+После изменения текста или рисунков пересоберите PDF перед подготовкой выгрузки.
 
 ## Обновление репозитория
 

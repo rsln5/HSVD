@@ -37,6 +37,7 @@ def release_files():
         names.add(f'results/applications/cpca_real/{name}')
     files = {name: ROOT / name for name in names}
     files['paper/nirs_computer_science.tex'] = ROOT / 'paper/nirs_computer_science.tex'
+    files['paper/nirs_computer_science.pdf'] = ROOT / 'paper/nirs_computer_science.pdf'
     files['paper/figures/pca_vs_cpca.pdf'] = ROOT / 'results/applications/cpca_real/pca_vs_cpca.pdf'
     missing = [str(path) for path in files.values() if not path.is_file()]
     if missing:
