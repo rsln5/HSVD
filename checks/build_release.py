@@ -24,9 +24,9 @@ def release_files():
         'examples/__init__.py', 'examples/cases.py', 'examples/cpca_real_data.py',
     }
     for module in ('hsvd', 'error_handling', 'exact_oracle', 'full_construction',
-                   'contest_jacobi', 'contest_protocol', 'cpca_real_data'):
+                   'contest_jacobi', 'contest_protocol', 'cpca_real_data', 'paper_tables'):
         names.add(f'tests/test_{module}.py')
-    for module in ('contest_experiments', 'render_contest_tables',
+    for module in ('contest_experiments', 'render_contest_tables', 'render_paper_tables',
                    'verify_paper_identities', 'verify_full_construction',
                    'verify_error_bounds', 'build_release'):
         names.add(f'checks/{module}.py')

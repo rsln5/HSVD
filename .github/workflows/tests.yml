@@ -16,4 +16,4 @@ jobs:
       - run: python -m checks.verify_error_bounds --output /tmp/hsvd-error-bounds.json
       - run: python -m checks.verify_paper_identities
       - run: python -m checks.verify_full_construction
-      - run: python -m checks.render_contest_tables --export results/contest/tables.tex --check
+      - run: python -m checks.render_paper_tables --check
